@@ -17,6 +17,7 @@ PACKAGES=(
 	"dev-lang/go"
 	"net-libs/nodejs"
 	"gui-apps/foot"
+	"gui-apps/wl-clipboard"
 )
 
 emerge $EMERGE_FLAGS ${PACKAGES[@]}

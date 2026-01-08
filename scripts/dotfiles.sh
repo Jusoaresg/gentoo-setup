@@ -3,7 +3,10 @@
 ROOT="${1:?No root}"
 RSYNC_FLAGS="${2:-}"
 
-rsync $RSYNC_FLAGS "${ROOT}/configs/" "${HOME}/.config/"
+rsync $RSYNC_FLAGS "${ROOT}/dotfiles/config/" "${HOME}/.config/"
+
+#NOTE: Home Files
+rsync $RSYNC_FLAGS "${ROOT}/dotfiles/bashrc" "${HOME}/.bashrc"
 
 NVIM_CONFIG_DIR="${HOME}/.config/nvim"
 NVIM_REPO="https://github.com/jusoaresg/nvim-conf"
