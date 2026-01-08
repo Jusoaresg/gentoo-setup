@@ -7,6 +7,8 @@ rsync $RSYNC_FLAGS "${ROOT}/dotfiles/config/" "${HOME}/.config/"
 
 #NOTE: Home Files
 rsync $RSYNC_FLAGS "${ROOT}/dotfiles/bashrc" "${HOME}/.bashrc"
+rsync $RSYNC_FLAGS "${ROOT}/dotfiles/fonts" "${HOME}/.fonts"
+rsync $RSYNC_FLAGS "${ROOT}/dotfiles/bin/" "${HOME}/.bin/"
 
 NVIM_CONFIG_DIR="${HOME}/.config/nvim"
 NVIM_REPO="https://github.com/jusoaresg/nvim-conf"

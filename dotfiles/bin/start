@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+gentoo-pipewire-launcher &
+exec mango
