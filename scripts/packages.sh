@@ -2,11 +2,21 @@
 
 EMERGE_FLAGS="${1:-}"
 
+emerge $EMERGE_FLAGS eselect-repository
+eselect repository enable guru
+emaint sync -r guru
+
 PACKAGES=(
-	"app-editors/nvim"
+	"app-editors/neovim"
 	"media-video/mpv"
-	"media-sound/pipewire"
+	"media-video/pipewire"
 	"app-misc/fastfetch"
+	"www-client/vivaldi"
+	"app-misc/tmux"
+	"gui-wm/mangowc"
+	"dev-lang/go"
+	"net-libs/nodejs"
+	"gui-apps/foot"
 )
 
 emerge $EMERGE_FLAGS ${PACKAGES[@]}
