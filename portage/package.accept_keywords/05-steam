@@ -1,0 +1,4 @@
+=games-util/steam-launcher-1.0.0.85-r2 ~amd64
+
+=sys-libs/libudev-compat-186-r1 ~amd64
+=games-util/game-device-udev-rules-20240523 ~amd64

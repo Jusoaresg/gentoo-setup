@@ -12,7 +12,11 @@ if [[ ! -d /var/db/repos/jaredallard-overlay ]]; then
 	eselect repository add jaredallard-overlay git https://github.com/jaredallard/overlay.git
 fi
 
-emaint sync -r guru -r jaredallard-overlay
+if [[ ! -d /var/db/repos/steam-overlay ]]; then
+	eselect repository enable steam-overlay
+fi
+
+emaint sync -r guru -r jaredallard-overlay -r steam-overlay
 
 
 PACKAGES=(
@@ -29,6 +33,19 @@ PACKAGES=(
 	"gui-apps/wl-clipboard"
 	"gui-apps/vicinae"
 	"media-sound/pulsemixer"
+	"gui-apps/swappy"
+	"gui-apps/grim"
+	"gui-apps/slurp"
+	"sys-fs/squashfuse"
+	"media-fonts/noto-cjk"
+	"media-fonts/noto-emoji"
+	"media-fonts/noto"
+	"app-shells/fzf"
+	"sys-apps/ripgrep"
+	"gui-apps/awww"
+	"media-gfx/imv"
+	"x11-terms/wezterm"
+	"games-util/steam-launcher"
 )
 
 emerge $EMERGE_FLAGS ${PACKAGES[@]}
