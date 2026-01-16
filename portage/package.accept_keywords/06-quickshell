@@ -1,0 +1,4 @@
+=gui-apps/quickshell-0.2.1 ~amd64
+=dev-embedded/libdisasm-0.23-r1 ~amd64
+=dev-libs/linux-syscall-support-2024.02.01 ~amd64
+=dev-util/breakpad-2024.02.16 ~amd64

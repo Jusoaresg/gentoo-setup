@@ -46,6 +46,7 @@ PACKAGES=(
 	"media-gfx/imv"
 	"x11-terms/wezterm"
 	"games-util/steam-launcher"
+	"gui-apps/quickshell"
 )
 
 emerge $EMERGE_FLAGS ${PACKAGES[@]}
