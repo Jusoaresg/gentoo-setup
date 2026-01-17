@@ -47,6 +47,7 @@ PACKAGES=(
 	"x11-terms/wezterm"
 	"games-util/steam-launcher"
 	"gui-apps/quickshell"
+	"games-action/prismlauncher"
 )
 
 emerge $EMERGE_FLAGS ${PACKAGES[@]}
