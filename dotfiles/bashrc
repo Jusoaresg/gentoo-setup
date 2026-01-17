@@ -12,3 +12,6 @@ alias vim="nvim"
 
 PATH=$PATH:$HOME/.bin
 PATH=$PATH:$HOME/go/bin
+
+# Binds 
+bind '"\C-f": "sessionizer\n"'
