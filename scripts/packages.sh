@@ -48,6 +48,7 @@ PACKAGES=(
 	"games-util/steam-launcher"
 	"gui-apps/quickshell"
 	"games-action/prismlauncher"
+	"media-video/obs-studio"
 )
 
 emerge $EMERGE_FLAGS ${PACKAGES[@]}
