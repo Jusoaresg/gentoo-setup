@@ -49,6 +49,7 @@ PACKAGES=(
 	"gui-apps/quickshell"
 	"games-action/prismlauncher"
 	"media-video/obs-studio"
+	"dev-java/openjdk:17"
 )
 
 emerge $EMERGE_FLAGS ${PACKAGES[@]}
