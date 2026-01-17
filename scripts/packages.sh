@@ -50,6 +50,9 @@ PACKAGES=(
 	"games-action/prismlauncher"
 	"media-video/obs-studio"
 	"dev-java/openjdk:17"
+	"sys-apps/xdg-desktop-portal"
+	"sys-apps/xdg-desktop-portal-gtk"
+	"gui-libs/xdg-desktop-portal-wlr"
 )
 
 emerge $EMERGE_FLAGS ${PACKAGES[@]}
