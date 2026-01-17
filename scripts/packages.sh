@@ -29,7 +29,6 @@ PACKAGES=(
 	"gui-wm/mangowc"
 	"dev-lang/go"
 	"net-libs/nodejs"
-	"gui-apps/foot"
 	"gui-apps/wl-clipboard"
 	"gui-apps/vicinae"
 	"media-sound/pulsemixer"
