@@ -54,6 +54,7 @@ PACKAGES=(
 	"sys-apps/xdg-desktop-portal-gtk"
 	"gui-libs/xdg-desktop-portal-wlr"
 	"dev-dotnet/dotnet-sdk-bin"
+	"app-misc/jq"
 )
 
 emerge $EMERGE_FLAGS ${PACKAGES[@]}
