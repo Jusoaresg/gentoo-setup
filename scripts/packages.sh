@@ -49,6 +49,7 @@ PACKAGES=(
 	"games-action/prismlauncher"
 	"media-video/obs-studio"
 	"dev-java/openjdk:17"
+	"dev-java/openjdk-bin:21"
 	"sys-apps/xdg-desktop-portal"
 	"sys-apps/xdg-desktop-portal-gtk"
 	"gui-libs/xdg-desktop-portal-wlr"
