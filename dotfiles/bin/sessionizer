@@ -8,7 +8,7 @@ if [ -n "$PROJECT" ]; then
 	SESSION_NAME=$(basename "$PROJECT")
 
 	if tmux has-session -t "$SESSION_NAME" 2>/dev/null; then
-		exec tmux a -t "$SESSION_NAME"
+		tmux switch-client -t "$SESSION_NAME"
 	else
 		tmux new-session -d -s "$SESSION_NAME" -c "$PROJECT"
 		tmux new-window -t "$SESSION_NAME" -c "$PROJECT" "nvim ."
