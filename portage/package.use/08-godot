@@ -1,0 +1,6 @@
+>=media-libs/freetype-2.14.1-r1 brotli
+>=media-libs/harfbuzz-12.2.0 icu
+>=dev-libs/icu-77.1 abi_x86_32
+>=app-arch/brotli-1.1.0 abi_x86_32
+>=llvm-core/llvm-21.1.8 abi_x86_32
+>=dev-games/godot-dotnet-4.6 raycast pulseaudio alsa
