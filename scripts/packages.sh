@@ -56,6 +56,7 @@ PACKAGES=(
 	"dev-dotnet/dotnet-sdk-bin"
 	"app-misc/jq"
 	"dev-games/godot-dotnet"
+	"media-sound/playerctl"
 )
 
 emerge $EMERGE_FLAGS ${PACKAGES[@]}
