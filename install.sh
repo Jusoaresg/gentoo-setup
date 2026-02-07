@@ -3,10 +3,18 @@ set -euo pipefail
 
 DRY_RUN=${DRY_RUN:-0}
 
-if [[ "$DRY_RUN" -ne 1 && $EUID -ne 0 ]]; then
-    echo "You need to run as root"
+if [[ "$EUID" -eq 0 ]]; then
+    echo "install.sh must NOT be run as root"
     exit 1
 fi
+
+as_root() {
+    if [[ "$EUID" -eq 0 ]]; then
+        "$@"
+    else
+        sudo "$@"
+    fi
+}
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
@@ -20,6 +28,8 @@ if [[ "$DRY_RUN" -eq 1 ]]; then
     EMERGE_FLAGS="$EMERGE_FLAGS --pretend"
 fi
 
-bash "${ROOT}/scripts/portage.sh" "$ROOT" $RSYNC_FLAGS
+as_root bash "${ROOT}/scripts/portage.sh" "$ROOT" $RSYNC_FLAGS
+as_root bash "${ROOT}/scripts/packages.sh" "$EMERGE_FLAGS"
+
 bash "${ROOT}/scripts/dotfiles.sh" "$ROOT" $RSYNC_FLAGS
-bash "${ROOT}/scripts/packages.sh" "$EMERGE_FLAGS"
+
