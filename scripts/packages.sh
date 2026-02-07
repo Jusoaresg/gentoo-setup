@@ -57,6 +57,7 @@ PACKAGES=(
 	"app-misc/jq"
 	"dev-games/godot-dotnet"
 	"media-sound/playerctl"
+	"media-fonts/adwaita-fonts"
 )
 
 emerge $EMERGE_FLAGS ${PACKAGES[@]}
