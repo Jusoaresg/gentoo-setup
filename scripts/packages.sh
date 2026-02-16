@@ -58,6 +58,7 @@ PACKAGES=(
 	"dev-games/godot-dotnet"
 	"media-sound/playerctl"
 	"media-fonts/adwaita-fonts"
+	"dev-dotnet/netcoredbg"
 )
 
 emerge $EMERGE_FLAGS ${PACKAGES[@]}
