@@ -8,15 +8,19 @@ if [[ ! -d /var/db/repos/guru ]]; then
 	eselect repository enable guru
 fi
 
-if [[ ! -d /var/db/repos/jaredallard-overlay ]]; then
-	eselect repository add jaredallard-overlay git https://github.com/jaredallard/overlay.git
+if [[ ! -d /var/db/repos/jaredallard ]]; then
+	eselect repository add jaredallard git https://github.com/jaredallard/overlay.git
 fi
 
 if [[ ! -d /var/db/repos/steam-overlay ]]; then
 	eselect repository enable steam-overlay
 fi
 
-emaint sync -r guru -r jaredallard-overlay -r steam-overlay
+if [[ ! -d /var/db/repos/haskell ]]; then
+	eselect repository enable haskell
+fi
+
+emaint sync -r guru -r jaredallard-overlay -r steam-overlay -r haskell
 
 
 PACKAGES=(
@@ -26,7 +30,7 @@ PACKAGES=(
 	"app-misc/fastfetch"
 	"www-client/vivaldi"
 	"app-misc/tmux"
-	"gui-wm/mangowc"
+	#"gui-wm/mangowc"
 	"dev-lang/go"
 	"net-libs/nodejs"
 	"gui-apps/wl-clipboard"
@@ -59,6 +63,23 @@ PACKAGES=(
 	"media-sound/playerctl"
 	"media-fonts/adwaita-fonts"
 	"dev-dotnet/netcoredbg"
+	"dev-lang/rust-bin"
+	"x11-themes/gnome-themes-standard"
+	"app-containers/docker"
+	"app-containers/docker-compose"
+	"dev-util/tree-sitter-cli"
+	"media-gfx/gimp"
+	"gui-wm/niri"
+	"gui-apps/xwayland-satellite"
+	"x11-wm/xmonad"
+	"x11-wm/xmonad-contrib"
+	"app-portage/gentoolkit"
+	"x11-misc/pcmanfm"
+	"x11-apps/setxkbmap"
+	"x11-misc/picom"
+	"media-gfx/feh"
+	"x11-apps/xrandr"
+	"app-arch/unrar"
 )
 
 emerge $EMERGE_FLAGS ${PACKAGES[@]}

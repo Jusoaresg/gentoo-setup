@@ -16,7 +16,7 @@ if [ -n "$PROJECT" ]; then
 		fi
 	else
 		tmux new-session -d -s "$SESSION_NAME" -c "$PROJECT"
-		tmux new-window -t "$SESSION_NAME" -c "$PROJECT" "nvim ."
+		tmux new-window -t "$SESSION_NAME" -c "$PROJECT" "nvim"
 		tmux new-window -t "$SESSION_NAME" -c "$PROJECT"
 		tmux select-window -t "$SESSION_NAME:2"
 		if [ -n "$TMUX" ]; then

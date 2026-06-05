@@ -1,0 +1,39 @@
+=dev-libs/hyprlang-0.6.8 ~amd64
+# required by gui-wm/hyprland-0.55.2::hyproverlay
+# required by hyprland (argument)
+=gui-libs/hyprwire-0.3.1 ~amd64
+# required by gui-wm/hyprland-0.55.2::hyproverlay
+# required by hyprland (argument)
+=dev-libs/hyprland-protocols-0.7.0 ~amd64
+# required by gui-libs/hyprtoolkit-0.5.4::hyproverlay
+# required by gui-libs/hyprland-guiutils-0.2.1::hyproverlay
+# required by gui-wm/hyprland-0.55.2::hyproverlay[guiutils]
+# required by hyprland (argument)
+=gui-libs/aquamarine-0.11.0 ~amd64
+# required by gui-libs/hyprland-guiutils-0.2.1::hyproverlay
+# required by gui-wm/hyprland-0.55.2::hyproverlay[guiutils]
+# required by hyprland (argument)
+=gui-libs/hyprtoolkit-0.5.4 ~amd64
+# required by gui-wm/hyprland-0.55.2::hyproverlay
+# required by hyprland (argument)
+=dev-cpp/glaze-7.0.2 ~amd64
+# required by hyprland (argument)
+=gui-wm/hyprland-0.55.2 ~amd64
+# required by gui-wm/hyprland-0.55.2::hyproverlay[guiutils]
+# required by hyprland (argument)
+=gui-libs/hyprland-guiutils-0.2.1 ~amd64
+# required by gui-libs/aquamarine-0.11.0::hyproverlay
+# required by gui-libs/hyprtoolkit-0.5.4::hyproverlay
+# required by gui-libs/hyprland-guiutils-0.2.1::hyproverlay
+# required by gui-wm/hyprland-0.55.2::hyproverlay[guiutils]
+# required by hyprland (argument)
+=dev-util/hyprwayland-scanner-0.4.6 ~amd64
+# required by gui-wm/hyprland-0.55.2::hyproverlay
+# required by hyprland (argument)
+=gui-libs/hyprutils-0.13.1 ~amd64
+# required by gui-wm/hyprland-0.55.2::hyproverlay
+# required by hyprland (argument)
+=gui-libs/hyprcursor-0.1.13-r1 ~amd64
+# required by gui-wm/hyprland-0.55.2::hyproverlay
+# required by hyprland (argument)
+=dev-libs/hyprgraphics-0.5.1-r1 ~amd64

@@ -8,10 +8,12 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
-alias vim="nvim"
+alias vim="$HOME/.bin/nvim"
+alias nvim="$HOME/.bin/nvim"
 
 PATH=$PATH:$HOME/.bin
 PATH=$PATH:$HOME/go/bin
+PATH=$PATH:$HOME/.dotnet:$HOME/.dotnet/tools
 
 # Binds 
 bind '"\C-f": "sessionizer\n"'

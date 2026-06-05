@@ -3,4 +3,4 @@
 >=dev-libs/icu-77.1 abi_x86_32
 >=app-arch/brotli-1.1.0 abi_x86_32
 >=llvm-core/llvm-21.1.8 abi_x86_32
->=dev-games/godot-dotnet-4.6 raycast pulseaudio alsa
+>=dev-games/godot-dotnet-4.6.2 raycast pulseaudio alsa ~amd64
